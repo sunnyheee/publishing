@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  line-height: 1.5rem;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+.dropdown {
+  width: 250px;
+}
+.dropdown-btn {
+  width: inherit;
+  padding: 10px;
+  background-color: yellowgreen;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.dropdown-submenu {
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.17);
+  width: inherit;
+}
+.dropdown-submenu a {
+  display: block;
+  padding: 7px;
+  text-align: center;
+}
+.dropdown:hover .dropdown-submenu {
+  display: block;
+}
