@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesomemin.css");
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  background-color: royalblue;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.gnb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+}
+.gnb a {
+  display: block;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+
+.gnb:hover a {
+  opacity: 0.3;
+}
+.gnb a:hover {
+  opacity: 1;
+}
+.gnb a::before {
+  content: ">";
+  /* font-family: fontawesome; */
+  margin-right: 10px;
+  opacity: 0;
+}
+.gnb a:hover:before {
+  opacity: 1;
+}
