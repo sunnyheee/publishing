@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesomemin.css");
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  background-color: #eee;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.gnb {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+  text-align: center;
+}
+.gnb a {
+  /* border: 1px solid red; */
+  width: 80px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.gnb a::before,
+.gnb a::after {
+  position: absolute;
+  content: attr(data-link);
+  width: 100%;
+  text-align: center;
+}
+.gnb a::before {
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.gnb a::after {
+  top: 100%;
+  left: 0;
+  color: #45b649;
+  transition: 0.5s;
+}
+.gnb a:hover::before {
+  top: -100%;
+}
+.gnb a:hover::after {
+  top: 0;
+}
