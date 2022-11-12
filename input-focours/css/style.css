@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesomemin.css");
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+form {
+  margin: 5px;
+}
+.item {
+  width: 300px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.item input[type="text"],
+.item input[type="email"],
+.item input[type="tel"] {
+  border: 1px solid lightgray;
+  height: 40px;
+  width: inherit;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-left: 40px;
+  outline: none;
+  transition: 0.5s;
+}
+.item .fa-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: gray;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.item input:focus {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+
+.item input:focus + .fa-solid {
+  color: dodgerblue;
+}
+
+.item input:focus::placeholder {
+  visibility: hidden;
+}
+
+/* info2 */
+.info2 .item {
+  width: 300px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.info2 .item input[type="text"],
+.info2 .item input[type="email"],
+.info2 .item input[type="tel"] {
+  border: 1px solid lightgray;
+  height: 40px;
+  width: inherit;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-left: 50px;
+  outline: none;
+  transition: 0.5s;
+}
+.info2 .item .fa-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: gray;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.5s;
+  border-radius: 5px 0 0 5px;
+}
+.info2 .item input:focus {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+
+.info2 .item input:focus + .fa-solid {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.info2 .item input:focus::placeholder {
+  visibility: hidden;
+}
