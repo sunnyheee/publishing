@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesomemin.css");
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.container {
+}
+input[id="tigger"] {
+  display: none;
+}
+label[for="tigger"] {
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+label[for="tigger"] span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  left: 0;
+  transition: 0.3s;
+}
+label[for="tigger"] span:nth-child(1) {
+  top: 0;
+}
+label[for="tigger"] span:nth-child(2) {
+  top: 50%;
+}
+label[for="tigger"] span:nth-child(3) {
+  top: 100%;
+}
+input[id="tigger"]:checked + label[for="tigger"] span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+input[id="tigger"]:checked + label[for="tigger"] span:nth-child(2) {
+  opacity: 0;
+}
+input[id="tigger"]:checked + label[for="tigger"] span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+input[id="tigger"]:checked ~ .sidebar {
+  right: 0;
+}
+input[id="tigger"]:checked + label[for="tigger"] {
+  right: 310px;
+}
+/* Side bar */
+.sidebar {
+  background-color: #000;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  right: -300px;
+  transition: 0.3s;
+}
