@@ -1,1 +1,1 @@
-![hamburger-menu](https://user-images.githubusercontent.com/84654346/219850801-3986821e-6a1e-43fb-b53c-77799de919a0.gif)
+![hamburger-menu-side](https://user-images.githubusercontent.com/84654346/219850987-fa8314f2-5be5-421a-8ebf-2dcf0706dc8b.gif)
